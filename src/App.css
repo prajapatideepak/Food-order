@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+*{
+  margin:0px ;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar{
+  background-color: rgb(73, 216, 147)		;
+  width: 10rem;
+  padding-top: 5rem;
+  margin: 0;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar ul li{
+  list-style: none;
+  padding:0.5rem 4rem;
+  width: 100%;
+  border-radius: 15px 0px 0px 15px;
+  margin-left:10px ;
+  margin:20px 20px 0px 20px   ;
+  background-color: white;
+}
+
+.container{
+  display: flex;
+  
+}
+
+.items{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.card{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 27%;
+  padding: 0.3rem 1rem;
+  margin: 0.8rem 1.2rem;
+  border-radius: 0.4rem;
+   box-shadow: 2px 2px 4px 2px silver;
+}
+
+.rating{
+  
+  background-color: black;
+  color:white;
+  border-radius: 12%;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem 0rem;
+}
+
+.heading{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+.fav{
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  background-color: white;
+  box-shadow: 1px 1px 2px 1px silver;
+}
+
+.light{
+  opacity: 0.5;
+}
+.c1{
+  background-color: rgb(255, 243, 234);
+}
+.c2{
+  background-color: rgb(232, 255, 254);
+}
+.c3{
+background-color: rgb(232, 247, 253);
+}
+
+.c4{
+   background-color: rgb(236, 241, 255);
+}
+.c5{
+  background-color: rgb(247, 233, 234);
+}
+
+.c6{
+    background-color: rgb(255, 233, 237);
+}
+
+.c7{
+      background-color: rgb(255, 253, 235);
+}
+
+
+.order{
+   
+}
+
+.drag{
+  border: 3px dashed lightgreen;
+  color: rgb(73, 216, 147);
+  padding: 0.1rem 2rem;
+}
+
+
+.btn{
+  padding: 0.5rem 4rem;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 0.5rem;
+  background-color: rgb(73, 216, 147);
+  border: 0px;
 }
